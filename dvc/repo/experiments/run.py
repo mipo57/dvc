@@ -7,7 +7,6 @@ from dvc.utils.cli_parse import loads_param_overrides
 logger = logging.getLogger(__name__)
 
 
-@locked
 def run(
     repo,
     targets: Optional[Iterable[str]] = None,
