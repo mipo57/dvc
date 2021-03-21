@@ -5,8 +5,6 @@ from functools import partial
 from dvc.exceptions import DvcException, ReproductionError
 from dvc.repo.scm_context import scm_context
 
-from . import eked
-
 if typing.TYPE_CHECKING:
     from . import Repo
 
