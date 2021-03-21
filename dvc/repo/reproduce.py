@@ -5,7 +5,7 @@ from functools import partial
 from dvc.exceptions import DvcException, ReproductionError
 from dvc.repo.scm_context import scm_context
 
-from . import locked
+from . import eked
 
 if typing.TYPE_CHECKING:
     from . import Repo
@@ -79,7 +79,6 @@ def _track_stage(stage):
     stage.repo.scm.track_changed_files()
 
 
-@locked
 @scm_context
 def reproduce(
     self: "Repo",
